@@ -4,7 +4,7 @@ from database import Base
 import datetime
 
 class Usuario(Base):
-    _tablename_ = "usuarios"
+    __tablename__ = "usuarios"
 
     id_usuario = Column(Integer, primary_key=True, index=True)
     nombre = Column(String, index=True)
@@ -20,7 +20,7 @@ class Usuario(Base):
 
 
 class Laboratorio(Base):
-    _tablename_ = "laboratorios"
+    __tablename__ = "laboratorios"
 
     id_laboratorio = Column(Integer, primary_key=True, index=True)
     nombre = Column(String, index=True)
@@ -31,7 +31,7 @@ class Laboratorio(Base):
 
 
 class Servicio(Base):
-    _tablename_ = "servicios"
+    __tablename__ = "servicios"
 
     id_servicio = Column(Integer, primary_key=True, index=True)
     nombre = Column(String, index=True)
@@ -42,7 +42,7 @@ class Servicio(Base):
 
 
 class Ticket(Base):
-    _tablename_ = "tickets"
+    __tablename__ = "tickets"
 
     id_ticket = Column(Integer, primary_key=True, index=True)
     id_solicitante = Column(Integer, ForeignKey("usuarios.id_usuario"))
