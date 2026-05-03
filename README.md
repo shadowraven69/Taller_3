@@ -15,6 +15,7 @@ Este proyecto es una API REST desarrollada con FastAPI que permite gestionar las
 - **Servicios:** Tipos de soporte técnico ofrecidos.
 - **Tickets:** Registro de solicitudes, controlando transiciones de estado desde `solicitado` hasta `terminado`.
 
+
 ### Arquitectura
 La arquitectura sigue el patrón MVC adaptado para APIs, separando:
 - **Modelos (models.py):** Representan las entidades de base de datos usando SQLAlchemy.
